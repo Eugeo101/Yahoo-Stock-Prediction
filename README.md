@@ -1,4 +1,4 @@
-# Yahoo Stock Prediction 📈💰  
+# Apple Stock Prediction 📈💰  
 
 This project focuses on **time-series forecasting** of Yahoo stock prices using multiple models, including **Naive Forecasting, SARIMA, Facebook Prophet, and XGBoost**. The dataset contains stock price data with **daily frequency** and spans multiple years. The project includes **EDA, preprocessing, model evaluation, and future predictions** based on the best-performing model.
 
@@ -50,7 +50,7 @@ The goal is to predict **daily stock prices** based on historical **Open, High, 
   - **SARIMA**: Configured for daily forecasting (`p=d=q=1`) to capture seasonal effects.  
 
 - **Facebook Prophet:**  
-  - Used **yearly seasonality** (`yearly_seasonality=True`) to model stock price variations.  
+  - Used **yearly seasonality** (`weekly_seasonality=True`) to model stock price variations.  
   - Plotted seasonal components using `plot_components()`.  
 
 - **Machine Learning Model:**  
@@ -65,13 +65,14 @@ The goal is to predict **daily stock prices** based on historical **Open, High, 
 
 | **Model**             | **Yearly MAPE (%)** | **Yearly MAE** | **Daily MAPE (%)** | **Daily MAE** |
 |----------------------|-------------------|---------------|------------------|---------------|
-| Naive Forecasting    | 10.49%            | 353           | 0.7%             | 23            |
-| SARIMA              | -                 | -             | 9.5%             | 325           |
-| Facebook Prophet    | -                 | -             | 0.83%            | 27.75         |
-| XGBoost             | -                 | -             | 2.01%            | 68            |
+| Naive Forecasting    | 24.78%            | 53           | 1.10%             | 2.35            |
+| SARIMA              | -                 | -             | 1.15%             | 2.44           |
+| Facebook Prophet    | -                 | -             | 1.8%            | 2.49         |
+| XGBoost             | -                 | -             | 10.36%            | 23.59            |
+| LSTM             | -                 | -             | 5.30%            | 12.97            |
 
 #### Best Model:  
-- **Facebook Prophet** provided the most accurate daily forecast with **MAPE = 0.83%** and **MAE = 27.75**.
+- **Facebook Prophet** provided the most accurate daily forecast with **MAPE = 1.8%** and **MAE = 2.49**.
 
 ---
 
